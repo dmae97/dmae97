@@ -1,71 +1,49 @@
 <div align="center">
 
-<!-- animated-style name using SVG for crisp, text-selectable rendering -->
-<h1 align="center">
-  <samp>dmae</samp>
-</h1>
+# dmae
 
-<p align="center">
-  <samp>Multi-Agent LLM Orchestration · OMK · AdaptOrch</samp>
-</p>
+**AI Agent · Multi-Agent Orchestration · AdaptOrch**
 
-<p align="center">
-  <a href="https://adaptorch.com" target="_blank">adaptorch.com</a>
-  <samp>·</samp>
-  <a href="https://github.com/dmae97" target="_blank">github</a>
-  <samp>·</samp>
-  <a href="https://orcid.org/0009-0006-2879-9514" target="_blank">ORCID</a>
-  <samp>·</samp>
-  <a href="https://scholar.google.com/citations?user=3QymgisAAAAJ" target="_blank">Google Scholar</a>
-</p>
+<a href="https://adaptorch.com">adaptorch.com</a> · <a href="https://github.com/dmae97/open_multi-agent_kit">open_multi-agent_kit</a> · <a href="https://orcid.org/0009-0006-2879-9514">ORCID</a> · <a href="https://scholar.google.com/citations?user=3QymgisAAAAJ">Google Scholar</a>
 
 </div>
 
-<!-- subtle gradient divider -->
-<img src="https://github.com/dmae97/dmae97/raw/main/assets/divider.svg" width="100%" alt="divider">
+---
 
-## Now
+## AI Agent
 
-Building **OMK** — an MCP-native agent control plane that turns multi-agent workflows into DAGs.  
-Leading **AdaptOrch**, a DAG-based orchestration framework for LLM systems.
+Building control systems for autonomous agents. Core work: DAG-based orchestration, MCP-native tool integration, runtime routing, and failure recovery.
 
-Previously: GI개발팀 팀장 at EGG Co., Ltd., working on energy-sector AI systems and industrial control-loop design.
+- **OMK** — open multi-agent kit: an MCP-native control plane for spawning and routing agents.
+- **AdaptOrch** — DAG orchestration engine for multi-agent LLM workflows.
 
-## Research
+## Papers
 
 | Title | Venue | Status |
 |---|---|---|
-| [AdaptOrch: DAG-based Multi-Agent LLM Orchestration](https://arxiv.org/abs/2602.16873) | arXiv:2602.16873 | IEEE ISAIA 2026 under review |
-| Cognitive State Engineering | TechRxiv | Preprint |
-| CoCo Theory | Zenodo | Preprint |
+| [AdaptOrch: DAG-based Multi-Agent LLM Orchestration](https://arxiv.org/abs/2602.16873) | arXiv:2602.16873 | IEEE ISAIA 2026, under review |
+| Cognitive State Engineering | TechRxiv | preprint |
+| CoCo Theory | Zenodo | preprint |
 
-**Interests:** multi-agent systems, LLM orchestration, AI systems engineering, evaluation & feedback loops, control-loop-inspired AI design.
+**Focus:** multi-agent systems, LLM orchestration, evaluation, feedback loops, control-loop-inspired AI design.
 
-## Projects
+## Productization
 
-| Project | Description | Stars |
-|---|---|---|
-| [open_multi-agent_kit](https://github.com/dmae97/open_multi-agent_kit) | MCP-native agent control plane + DAG orchestration | 120 |
-| [roblox-studio-mcp-server-updated](https://github.com/dmae97/roblox-studio-mcp-server-updated) | MCP server adapter for Roblox Studio | 13 |
+- **adaptorch.com** — AdaptOrch SaaS platform. Current: private beta with pricing at `/pricing`.
+- **open_multi-agent-kit** — open-source control plane. 120+ stars, used as reference implementation for OMK architecture.
+- **roblox-studio-mcp-server-updated** — MCP adapter for Roblox Studio workflows.
 
-## Profiles
+## Lab Notes
 
-- **GitHub:** [github.com/dmae97](https://github.com/dmae97)
-- **ORCID:** [0009-0006-2879-9514](https://orcid.org/0009-0006-2879-9514)
-- **Google Scholar:** [Geunbin Yu](https://scholar.google.com/citations?user=3QymgisAAAAJ)
-- **Site:** [adaptorch.com](https://adaptorch.com)
+Experiments and write-ups on agent runtimes, evaluation harnesses, and orchestration patterns. Not polished blog posts. Recorded so future builds can reference them.
 
-## Stats
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=dmae97&show_icons=true&hide_border=true&theme=dark&hide_title=true&include_all_commits=true&count_private=true">
-    <img alt="dmae97 GitHub stats" src="https://github-readme-stats.vercel.app/api?username=dmae97&show_icons=true&hide_border=true&hide_title=true&include_all_commits=true&count_private=true">
-  </picture>
-</p>
+- DAG topology routing and cycle detection
+- Reasoning-content handling for Kimi / Z.ai / DeepSeek
+- Tool-use evaluation loops and regression testing
+- Telegram gateway hooks and proactive agent scheduling
 
 ---
 
-<p align="center">
-  <samp><sub>Currently: designing the next control loop for autonomous AI systems.</sub></samp>
-</p>
+<div align="center">
+  <sub>Currently building the runtime layer for autonomous multi-agent systems.</sub>
+</div>
