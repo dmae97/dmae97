@@ -1,4 +1,8 @@
 <div align="center">
+  <img src="https://github.com/dmae97/dmae97/raw/main/assets/banner.svg" width="100%" alt="dmae banner">
+</div>
+
+<div align="center">
 
 # dmae
 
@@ -6,6 +10,10 @@
 
 <a href="https://adaptorch.com">adaptorch.com</a> · <a href="https://github.com/dmae97/open_multi-agent_kit">open_multi-agent_kit</a> · <a href="https://orcid.org/0009-0006-2879-9514">ORCID</a> · <a href="https://scholar.google.com/citations?user=3QymgisAAAAJ">Google Scholar</a>
 
+</div>
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=dmae97&label=visits&color=111111&style=flat" alt="profile visits">
 </div>
 
 ---
@@ -47,6 +55,10 @@ Experiments and write-ups on agent runtimes, evaluation harnesses, and orchestra
 - Telegram gateway hooks and proactive agent scheduling
 
 ---
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=dmae97&bg_color=111111&color=787774&line=787774&point=f5f5f5&area=true&hide_border=true" width="100%" alt="contribution graph">
+</div>
 
 <div align="center">
   <sub>Currently building the runtime layer for autonomous multi-agent systems.</sub>
