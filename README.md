@@ -10,6 +10,10 @@
 
 ---
 
+<div align="center">
+  <img src="https://github.com/dmae97/dmae97/raw/main/assets/dag-flow.svg" width="320" alt="DAG orchestration flow">
+</div>
+
 ## AI Agent
 
 Building control systems for autonomous agents. Core work: DAG-based orchestration, MCP-native tool integration, runtime routing, and failure recovery.
