@@ -1,36 +1,88 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Geunbin Yu — multi-agent systems</title>
+  <desc id="desc">Animated network banner for dmae97</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0a0a0a"/>
-      <stop offset="100%" stop-color="#111111"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="0.48" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#111827"/>
     </linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="rgba(120,117,116,0)"/>
-      <stop offset="50%" stop-color="rgba(120,117,116,0.6)"/>
-      <stop offset="100%" stop-color="rgba(120,117,116,0)"/>
+    <radialGradient id="cyanGlow" cx="0.2" cy="0.1" r="0.9">
+      <stop offset="0" stop-color="#0891b2" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#0891b2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetGlow" cx="0.85" cy="0.9" r="0.8">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+      <animate attributeName="x1" values="-1;1" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;2" dur="6s" repeatCount="indefinite"/>
     </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#38bdf8" stroke-opacity="0.07"/>
+    </pattern>
+    <filter id="blur"><feGaussianBlur stdDeviation="28"/></filter>
+    <filter id="smallGlow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="frame"><rect width="1200" height="320" rx="24"/></clipPath>
   </defs>
-  <rect width="800" height="200" fill="url(#bg)"/>
-  
-  <!-- circuit lines -->
-  <g stroke="url(#line)" stroke-width="1" fill="none">
-    <path d="M0,140 Q200,160 400,140 Q600,120 800,140"/>
-    <path d="M0,150 Q200,170 400,150 Q600,130 800,150"/>
-    <path d="M0,130 Q200,150 400,130 Q600,110 800,130"/>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="320" fill="url(#background)"/>
+    <rect width="1200" height="320" fill="url(#cyanGlow)"/>
+    <rect width="1200" height="320" fill="url(#violetGlow)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+
+    <circle cx="130" cy="70" r="90" fill="#06b6d4" opacity="0.11" filter="url(#blur)">
+      <animate attributeName="cx" values="130;260;130" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1040" cy="260" r="110" fill="#8b5cf6" opacity="0.14" filter="url(#blur)">
+      <animate attributeName="cx" values="1040;900;1040" dur="12s" repeatCount="indefinite"/>
+    </circle>
+
+    <g fill="none" stroke="url(#accent)" stroke-width="1.5" stroke-opacity="0.55" stroke-dasharray="5 14">
+      <path d="M-40 78 C180 18 300 138 520 78 S880 18 1240 78">
+        <animate attributeName="stroke-dashoffset" from="0" to="-76" dur="5s" repeatCount="indefinite"/>
+      </path>
+      <path d="M-40 246 C220 178 360 298 610 232 S960 184 1240 230">
+        <animate attributeName="stroke-dashoffset" from="0" to="76" dur="7s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <g fill="#22d3ee" filter="url(#smallGlow)">
+      <circle r="3"><animateMotion dur="6s" repeatCount="indefinite" path="M-40 78 C180 18 300 138 520 78 S880 18 1240 78"/></circle>
+      <circle r="3" fill="#a78bfa"><animateMotion dur="7s" begin="-2s" repeatCount="indefinite" path="M-40 246 C220 178 360 298 610 232 S960 184 1240 230"/></circle>
+    </g>
+
+    <g fill="#e2e8f0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" text-anchor="middle">
+      <text x="600" y="130" font-size="16" letter-spacing="6" fill="#67e8f9">DMAE97 / GEUNBIN YU</text>
+      <text x="600" y="184" font-size="42" font-weight="700" letter-spacing="-1">CONTROL SYSTEMS FOR AI AGENTS</text>
+      <rect x="385" y="202" width="430" height="2" rx="1" fill="url(#accent)"/>
+
+      <g font-size="14" letter-spacing="3" fill="#94a3b8">
+        <text x="600" y="242" opacity="0">MULTI-AGENT ORCHESTRATION
+          <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.05;0.28;0.33;1" dur="9s" repeatCount="indefinite"/>
+        </text>
+        <text x="600" y="242" opacity="0">MCP-NATIVE RUNTIME ROUTING
+          <animate attributeName="opacity" values="0;0;0;1;1;0;0" keyTimes="0;0.32;0.35;0.38;0.61;0.66;1" dur="9s" repeatCount="indefinite"/>
+        </text>
+        <text x="600" y="242" opacity="0">EVIDENCE-GATED EXECUTION
+          <animate attributeName="opacity" values="0;0;0;1;1;0" keyTimes="0;0.65;0.68;0.71;0.95;1" dur="9s" repeatCount="indefinite"/>
+        </text>
+      </g>
+    </g>
+
+    <g fill="#22d3ee" opacity="0.8">
+      <circle cx="90" cy="162" r="4"><animate attributeName="r" values="3;7;3" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite"/></circle>
+      <circle cx="1110" cy="158" r="4" fill="#a78bfa"><animate attributeName="r" values="7;3;7" dur="2.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <rect x="0" y="-18" width="1200" height="18" fill="#22d3ee" opacity="0.035">
+      <animate attributeName="y" values="-18;338" dur="5s" repeatCount="indefinite"/>
+    </rect>
   </g>
-  
-  <!-- animated dots -->
-  <circle r="2" fill="#787774">
-    <animateMotion dur="4s" repeatCount="indefinite" path="M0,140 Q200,160 400,140 Q600,120 800,140"/>
-  </circle>
-  <circle r="2" fill="#787774">
-    <animateMotion dur="4s" begin="1.3s" repeatCount="indefinite" path="M0,150 Q200,170 400,150 Q600,130 800,150"/>
-  </circle>
-  <circle r="2" fill="#787774">
-    <animateMotion dur="4s" begin="2.6s" repeatCount="indefinite" path="M0,130 Q200,150 400,130 Q600,110 800,130"/>
-  </circle>
-  
-  <!-- text -->
-  <text x="400" y="85" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', monospace" font-size="48" font-weight="600" fill="#f5f5f5" letter-spacing="-0.04em">dmae</text>
-  <text x="400" y="115" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" fill="#787774" letter-spacing="0.12em">MULTI-AGENT LLM ORCHESTRATION</text>
+  <rect x="1" y="1" width="1198" height="318" rx="23" fill="none" stroke="url(#accent)" stroke-opacity="0.32" stroke-width="2"/>
 </svg>
