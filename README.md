@@ -111,8 +111,8 @@ Current focus: multi-agent systems, LLM orchestration, evaluation, feedback loop
 ## GitHub telemetry
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=dmae97&show_icons=true&rank_icon=github&hide_border=true&bg_color=00000000&title_color=22d3ee&text_color=94a3b8&icon_color=a78bfa" alt="GitHub stats">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dmae97&layout=compact&langs_count=8&hide_border=true&bg_color=00000000&title_color=22d3ee&text_color=94a3b8" alt="Top languages">
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=dmae97&theme=tokyonight" alt="GitHub stats">
+  <img height="170" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=dmae97&theme=tokyonight" alt="Repositories per language">
 </p>
 
 ## Lab notes
