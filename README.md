@@ -131,11 +131,11 @@ Full record: [ORCID](https://orcid.org/0009-0006-2879-9514) / [Google Scholar](h
 
 <p align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=dmae97&amp;show_icons=true&amp;include_all_commits=true&amp;theme=tokyonight&amp;hide_border=true&amp;rank_icon=github&amp;custom_title=GitHub%20Stats" alt="GitHub stats">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dmae97&amp;layout=compact&amp;langs_count=8&amp;theme=tokyonight&amp;hide_border=true" alt="Top languages">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dmae97&amp;layout=compact&amp;langs_count=8&amp;theme=tokyonight&amp;hide_border=true&amp;card_width=455" alt="Top languages">
 </p>
 
 <p align="center">
-  <img width="72%" src="https://streak-stats.demolab.com?user=dmae97&amp;theme=tokyonight&amp;hide_border=true&amp;date_format=j%20M%5B%20Y%5D" alt="GitHub streak">
+  <img width="100%" src="https://streak-stats.demolab.com?user=dmae97&amp;theme=tokyonight&amp;hide_border=true&amp;date_format=j%20M%5B%20Y%5D&amp;card_width=860" alt="GitHub streak">
 </p>
 
 <p align="center">
